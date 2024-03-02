@@ -4,5 +4,6 @@ class Api::V1::LearningResourcesController < ApplicationController
     render json: resources
 
     images = ImageFacade.new(params[:country]).images
+    require 'pry'; binding.pry
   end
 end
