@@ -16,8 +16,29 @@
           null,
           null,
           1,
+          1,
           null,
           1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          null,
           null,
           null,
           null
@@ -54,7 +75,7 @@
           null,
           1,
           null,
-          0,
+          null,
           null,
           1,
           null,
@@ -304,6 +325,54 @@
           null
         ]
       },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/spec/services/recipe_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/services/recipe_service.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/controllers/api/v1/recipes_controller.rb": {
         "lines": [
           1,
@@ -348,27 +417,6 @@
           null
         ]
       },
-      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/services/recipe_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/poros/recipe.rb": {
         "lines": [
           1,
@@ -384,6 +432,6 @@
         ]
       }
     },
-    "timestamp": 1709352447
+    "timestamp": 1709354639
   }
 }
