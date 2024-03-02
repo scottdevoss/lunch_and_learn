@@ -4,7 +4,9 @@ describe RecipeService do
   context "class methods" do
     context "#recipes_by_country" do
       it "returns all recipes by country" do
+
         search = RecipeService.new.recipes_by_country("thailand")
+        
         expect(search).to be_a(Hash)
         expect(search[:hits]).to be_a(Array)
 

@@ -6,10 +6,6 @@ RSpec.describe "Recipes API", type: :request do
 
       get "/api/v1/recipes?country=thailand"
 
-      # headers = { "Content-Type" => "application/json",
-      #   "Accept" => "application/json"
-      # }
-
       expect(response).to be_successful
       expect(response.status).to eq(200)
 
@@ -34,6 +30,16 @@ RSpec.describe "Recipes API", type: :request do
         expect(recipe[:attributes]).to_not have_key(:healthLabels)
         expect(recipe[:attributes]).to_not have_key(:ingredients)
       end
+    end
+
+    it "returns an empty array if the country parameter is an empty string" do
+
+      get "/api/v1/recipes?country="
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+      json = JSON.parse(response.body, symbolize_names: true)
+      expect(json[:data]).to eq([])
     end
   end
 end
