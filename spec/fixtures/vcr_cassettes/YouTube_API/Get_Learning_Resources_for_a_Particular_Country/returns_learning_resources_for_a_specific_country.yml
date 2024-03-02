@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyC1FGab88gHz6j66moKFQ9MpxOyuiaa_Zs&part=snippet&q=laos
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=<Youtube_channel_id>&key=<Youtube_api>&part=snippet&q=laos
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sat, 02 Mar 2024 18:05:51 GMT
+      - Sat, 02 Mar 2024 18:10:00 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -62,7 +62,7 @@ http_interactions:
               },
               "snippet": {
                 "publishedAt": "2021-08-29T10:13:10Z",
-                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "channelId": "<Youtube_channel_id>",
                 "title": "A Super Quick History of Laos",
                 "description": "Audio Requiring Attribution: LukeIRL: https://freesound.org/people/LukeIRL/sounds/176134/ RTB45: ...",
                 "thumbnails": {
@@ -96,7 +96,7 @@ http_interactions:
               },
               "snippet": {
                 "publishedAt": "2022-05-04T05:56:51Z",
-                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "channelId": "<Youtube_channel_id>",
                 "title": "A Super Quick History of Myanmar (AKA Burma)",
                 "description": "Pictures Requiring Attribution: Davidsnique: ...",
                 "thumbnails": {
@@ -130,7 +130,7 @@ http_interactions:
               },
               "snippet": {
                 "publishedAt": "2019-08-02T20:36:34Z",
-                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "channelId": "<Youtube_channel_id>",
                 "title": "Super Quick Histories!",
                 "description": "",
                 "thumbnails": {
@@ -164,7 +164,7 @@ http_interactions:
               },
               "snippet": {
                 "publishedAt": "2023-08-19T15:06:47Z",
-                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "channelId": "<Youtube_channel_id>",
                 "title": "A Super Quick History of Slovakia",
                 "description": "Pictures: https://commons.wikimedia.org/wiki/File:20160402_Tatry_Zachodnie_Rako%C5%84_4431.jpg ...",
                 "thumbnails": {
@@ -198,7 +198,7 @@ http_interactions:
               },
               "snippet": {
                 "publishedAt": "2021-12-13T21:16:26Z",
-                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "channelId": "<Youtube_channel_id>",
                 "title": "A Super Quick History of the Maldives",
                 "description": "Pictures Requiring Attribution: Gsnewid: https://commons.wikimedia.org/wiki/File:Coconut_Tree_in_Tamilnadu.jpg Indunil ...",
                 "thumbnails": {
@@ -225,5 +225,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Sat, 02 Mar 2024 18:05:51 GMT
+  recorded_at: Sat, 02 Mar 2024 18:10:00 GMT
 recorded_with: VCR 6.2.0
