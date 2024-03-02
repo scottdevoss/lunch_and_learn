@@ -15,8 +15,9 @@
           null,
           null,
           null,
-          0,
-          0,
+          1,
+          null,
+          1,
           null,
           null,
           null
@@ -308,6 +309,8 @@
           1,
           1,
           1,
+          1,
+          null,
           null,
           null
         ]
@@ -317,8 +320,70 @@
           1,
           null
         ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/serializers/recipe_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/facades/recipe_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          20,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/services/recipe_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/poros/recipe.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          20,
+          20,
+          20,
+          20,
+          20,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1709347558
+    "timestamp": 1709352447
   }
 }

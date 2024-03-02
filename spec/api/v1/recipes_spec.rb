@@ -11,6 +11,7 @@ RSpec.describe "Recipes API", type: :request do
       # }
 
       expect(response).to be_successful
+      # require 'pry'; binding.pry
       expect(response.status).to eq(200)
     end
   end
