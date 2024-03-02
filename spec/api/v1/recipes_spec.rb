@@ -32,14 +32,33 @@ RSpec.describe "Recipes API", type: :request do
       end
     end
 
-    it "returns an empty array if the country parameter is an empty string" do
+    it "returns a random country if no country is sent by the user" do
 
       get "/api/v1/recipes?country="
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
       json = JSON.parse(response.body, symbolize_names: true)
-      # expect(json[:data]).to eq([])
+
+      expect(json).to be_a(Hash)
+      expect(json).to have_key(:data)
+      expect(json[:data]).to be_a(Array)
+
+      json[:data].each do |recipe|
+        expect(recipe).to have_key(:id)
+        expect(recipe).to have_key(:type)
+        expect(recipe).to have_key(:attributes)
+        expect(recipe[:attributes]).to have_key(:title)
+        expect(recipe[:attributes]).to have_key(:url)
+        expect(recipe[:attributes]).to have_key(:country)
+        expect(recipe[:attributes]).to have_key(:image)
+        expect(recipe[:attributes]).to_not have_key(:count)
+        expect(recipe[:attributes]).to_not have_key(:hits)
+        expect(recipe[:attributes]).to_not have_key(:source)
+        expect(recipe[:attributes]).to_not have_key(:dietLabels)
+        expect(recipe[:attributes]).to_not have_key(:healthLabels)
+        expect(recipe[:attributes]).to_not have_key(:ingredients)
+      end
     end
   end
 end
