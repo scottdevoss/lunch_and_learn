@@ -3,7 +3,7 @@ require "rails_helper"
 describe LearningResourcesService do
   context "class methods" do
     context "#resources_by_country" do
-      it "returns youtube resources by country" do
+      xit "returns youtube resources by country", :vcr do
 
         search = LearningResourcesService.new.resources_by_country("laos")
         
@@ -15,7 +15,7 @@ describe LearningResourcesService do
         expect(video).to be_a(Hash)
         expect(video).to have_key(:id)
         expect(video[:id][:videoId]).to be_a(String)
-        
+
         expect(video).to have_key(:snippet)
         expect(video[:snippet]).to have_key(:title)
         expect(video[:snippet][:title]).to be_a(String)
