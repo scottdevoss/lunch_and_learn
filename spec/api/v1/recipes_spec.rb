@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Recipes API", type: :request do
-  describe "Get Recipes For A Particular Recipe" do
+  describe "Get Recipes For A Particular Recipe", :vcr do
     it "returns recipes for a specific country" do
 
       get "/api/v1/recipes?country=thailand"
