@@ -60,5 +60,17 @@ RSpec.describe "Recipes API", type: :request do
         expect(recipe[:attributes]).to_not have_key(:ingredients)
       end
     end
+
+    it "returns a an empty array if there are no recipes" do
+
+      get "/api/v1/recipes?country=alkhgernadg"
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+      json = JSON.parse(response.body, symbolize_names: true)
+      
+      expect(json).to have_key(:data)
+      expect(json[:data]).to eq([])
+    end
   end
 end
