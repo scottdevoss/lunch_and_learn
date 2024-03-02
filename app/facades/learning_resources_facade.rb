@@ -8,6 +8,16 @@ class LearningResourcesFacade
 
     json = service.resources_by_country(@country)
 
-    Video.new(@country, json[:items].first)
+    Video.new(json[:items].first)
+  end
+
+  def images
+    service = ImageService.new
+
+    json = service.images_by_country(@country)
+
+    images = json[:results].map do |image|
+      Image.new(image)
+    end
   end
 end
