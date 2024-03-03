@@ -33,7 +33,7 @@ RSpec.describe "Recipes API", type: :request do
       end
     end
 
-    it "returns a random country if no country is sent by the user" do
+    it "returns a random country if no country is sent by the user", :vcr do
 
       get "/api/v1/recipes?country="
 
