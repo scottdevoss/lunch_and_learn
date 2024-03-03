@@ -26,8 +26,8 @@
           1,
           null,
           null,
+          null,
           1,
-          0,
           null,
           0,
           0,
@@ -329,6 +329,7 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null
@@ -609,6 +610,44 @@
           null
         ]
       },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/spec/models/favorite_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/models/favorite.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/spec/models/user_spec.rb": {
         "lines": [
           1,
@@ -639,13 +678,6 @@
           1,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
           null
         ]
       },
@@ -753,8 +785,32 @@
           null,
           null
         ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/controllers/api/v1/favorites_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1709481183
+    "timestamp": 1709488633
   }
 }
