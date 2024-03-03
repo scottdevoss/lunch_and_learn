@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Recipes API", type: :request do
   describe "Get Recipes For A Particular Recipe", :vcr do
-    xit "returns recipes for a specific country" do
+    it "returns recipes for a specific country" do
 
       get "/api/v1/recipes?country=thailand"
 
@@ -32,7 +32,7 @@ RSpec.describe "Recipes API", type: :request do
       end
     end
 
-    xit "returns a random country if no country is sent by the user" do
+    it "returns a random country if no country is sent by the user" do
 
       get "/api/v1/recipes?country="
 
@@ -61,7 +61,7 @@ RSpec.describe "Recipes API", type: :request do
       end
     end
 
-    xit "returns a an empty array if there are no recipes" do
+    it "returns a an empty array if there are no recipes" do
 
       get "/api/v1/recipes?country=alkhgernadg"
 
