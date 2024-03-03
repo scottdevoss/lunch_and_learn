@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "User" do
   #POST /api/v1/users
-  xit "creates a user with post info" do
+  it "creates a user with post info" do
     user_params = {
       "name": "Odell",
       "email": "goodboy@ruffruff.com",
@@ -36,7 +36,7 @@ RSpec.describe "User" do
   end
 
   #Sad Path Creating
-  xit "gives an error if the passwords do not match" do
+  it "gives an error if the passwords do not match" do
     user_params = {
       "name": "Odell",
       "email": "goodboy@ruffruff.com",
@@ -62,7 +62,7 @@ RSpec.describe "User" do
     expect(error[:errors][0][:status]).to eq("400")
   end
 
-  xit "gives an error if the user already exists" do
+  it "gives an error if the user already exists" do
     user_params = {
       "name": "Odell",
       "email": "goodboy@ruffruff.com",
@@ -91,7 +91,7 @@ RSpec.describe "User" do
 
   #Happy Path logging in
   #POST /api/v1/sessions
-  xit "logs in a user" do
+  it "logs in a user" do
     user_params = {
       "name": "Odell",
       "email": "goodboy@ruffruff.com",
@@ -125,7 +125,7 @@ RSpec.describe "User" do
   end
 
   #Sad Path Logging In
-  xit "gives an error if credentials are bad" do
+  it "gives an error if credentials are bad" do
     user_params = {
       "name": "Odell",
       "email": "goodboy@ruffruff.com",

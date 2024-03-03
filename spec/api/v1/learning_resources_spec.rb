@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "Learning Resources", type: :request do
   describe "Get Learning Resources for a Particular Country", :vcr do
     #GET /api/v1/learning_resources?country=laos
-    xit "returns learning resources for a specific country" do
+    it "returns learning resources for a specific country" do
 
       get "/api/v1/learning_resources?country=laos"
 

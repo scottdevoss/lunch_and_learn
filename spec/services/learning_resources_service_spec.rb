@@ -3,7 +3,7 @@ require "rails_helper"
 describe LearningResourcesService do
   context "class methods" do
     context "#resources_by_country" do
-      xit "returns youtube resources by country", :vcr do
+      it "returns youtube resources by country", :vcr do
 
         search = LearningResourcesService.new.resources_by_country("laos")
         
