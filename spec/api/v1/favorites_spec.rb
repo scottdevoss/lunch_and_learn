@@ -26,6 +26,12 @@ RSpec.describe "Favorites", type: :request do
 
       expect(response).to be_successful
       expect(response.status).to eq(201)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json).to be_a(Hash)
+      expect(json).to have_key(:success)
+      expect(json[:success]).to eq("Favorite added successfully")
     end
   end
 end
