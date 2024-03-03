@@ -1,6 +1,11 @@
 class Api::V1::FavoritesController < ApplicationController
   before_action :authenticate_api_key
 
+  def index
+    favorites = @current_user.favorites
+    render json: FavoriteSerializer.new(favorites)
+  end
+
   def create
     favorite = @current_user.favorites.new(favorite_params)
     if favorite.save

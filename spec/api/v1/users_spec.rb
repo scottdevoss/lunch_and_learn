@@ -1,6 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "User" do
+  #POST /api/v1/users
   xit "creates a user with post info" do
     user_params = {
       "name": "Odell",
@@ -89,6 +90,7 @@ RSpec.describe "User" do
   end
 
   #Happy Path logging in
+  #POST /api/v1/sessions
   xit "logs in a user" do
     user_params = {
       "name": "Odell",
