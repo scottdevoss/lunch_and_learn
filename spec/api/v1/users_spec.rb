@@ -34,7 +34,7 @@ RSpec.describe "User" do
     expect(user[:data][:attributes][:api_key]).to be_a(String)
   end
 
-  #Sad Path
+  #Sad Path Creating
   it "gives an error if the passwords do not match" do
     user_params = {
       "name": "Odell",
@@ -88,6 +88,7 @@ RSpec.describe "User" do
     expect(error[:errors][0][:status]).to eq("422")
   end
 
+  #Happy Path logging in
   it "logs in a user" do
     user_params = {
       "name": "Odell",
@@ -119,5 +120,38 @@ RSpec.describe "User" do
 
     expect(user[:data][:attributes]).to have_key(:api_key)
     expect(user[:data][:attributes][:api_key]).to be_a(String)
+  end
+
+  #Sad Path
+  it "gives an error if credentials are bad" do
+    user_params = {
+      "name": "Odell",
+      "email": "goodboy@ruffruff.com",
+      "password": "treats4lyf"
+    }
+
+    user = User.create!(user_params)
+
+    wrong_user_params = {
+      "name": "Odell",
+      "email": "wrongemail",
+      "password": "treats4f"
+    }
+
+    
+    headers = { "CONTENT_TYPE" => "application/json",
+      "ACCEPT" => "application/json"
+    }
+
+    post '/api/v1/sessions', headers: headers, params: wrong_user_params.to_json 
+
+    error = JSON.parse(response.body, symbolize_names: true)
+
+    expect(error).to have_key(:errors)
+    expect(error[:errors]).to be_a(Array)
+    expect(error[:errors][0]).to have_key(:title)
+    expect(error[:errors][0]).to have_key(:status)
+    expect(error[:errors][0][:title]).to eq("Bad Credentials")
+    expect(error[:errors][0][:status]).to eq("400")
   end
 end
