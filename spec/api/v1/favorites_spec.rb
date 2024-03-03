@@ -10,8 +10,19 @@ RSpec.describe "Favorites", type: :request do
       }
   
       user = User.create!(user_params)
-require 'pry'; binding.pry
-      post "/api/v1/favorites"
+
+      favorite = {
+        "api_key": "#{user.api_key}",
+        "country": "Mexico",
+        "recipe_link": "https://www.gimmesomeoven.com/best-chicken-enchiladas-ever/",
+        "recipe_title": "Chicken Enchiladas"
+      }
+
+      headers = { "CONTENT_TYPE" => "application/json",
+        "ACCEPT" => "application/json"
+      }
+
+      post "/api/v1/favorites", headers: headers, params: favorite.to_json
 
       expect(response).to be_successful
       expect(response.status).to eq(201)
