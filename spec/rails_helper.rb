@@ -76,6 +76,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.filter_sensitive_data('<Edamam_app_id>') {Rails.application.credentials.edamam_app_id[:key]}
   config.filter_sensitive_data('<Edamam_app_key>') {Rails.application.credentials.edamam_api_key[:key]}
+  config.filter_sensitive_data('<Weather>') {Rails.application.credentials.weather[:key]}
   # config.default_cassette_options = { re_record_interval: 7.days }
   config.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = true
