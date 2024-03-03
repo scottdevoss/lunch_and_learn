@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/spec/api/v1/learning_resources_spec.rb": {
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/spec/api/v1/favorites_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,23 +9,13 @@
           1,
           1,
           null,
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
           null,
-          0,
-          0,
-          0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
           null,
-          0,
+          1,
+          1,
           0,
           null,
           0,
@@ -333,6 +323,40 @@
           null
         ]
       },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/spec/api/v1/learning_resources_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/spec/api/v1/recipes_spec.rb": {
         "lines": [
           1,
@@ -580,10 +604,10 @@
           null,
           1,
           1,
-          2,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -720,6 +744,6 @@
         ]
       }
     },
-    "timestamp": 1709479299
+    "timestamp": 1709480072
   }
 }
