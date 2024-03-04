@@ -10,7 +10,7 @@ class Api::V1::LearningResourcesController < ApplicationController
       images: images
     }
     resources = ResourcesSerializer.new(resource_data)
-  
+ 
     render json: resources
   end
 end
