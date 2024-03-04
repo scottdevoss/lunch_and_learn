@@ -5,24 +5,13 @@ class Api::V1::AirQualityController < ApplicationController
     air_data = AirQualityFacade.new(capital).air_quality
 
     air_quality = {
-      aqi: air_data.aqi,
-      datetime: air_data.datetime,
-      readable_aqi: 
-      if air_data.aqi == 5
-        "Very Poor"
-      elsif air_data.aqi == 4
-        "Poor"
-      elsif air_data.aqi == 3
-        "Moderate"
-      elsif air_data.aqi == 2
-        "Fair"
-      else
-        "Good"
-      end
+      aqi: air_data,
+      datetime: air_data,
+      readable_aqi: air_data
 
     }
     air = AirQualitySerializer.new(air_quality)
-   
+  
     render json: air
   end
 end
