@@ -98,9 +98,9 @@
           1,
           1,
           1,
-          2,
-          2,
-          2,
+          3,
+          3,
+          3,
           null,
           1,
           1,
@@ -473,6 +473,7 @@
           1,
           1,
           null,
+          null,
           null
         ]
       },
@@ -481,8 +482,20 @@
           1,
           null
         ]
+      },
+      "/Users/scottdevoss/turing/3mod/final/lunch_and_learn/app/poros/capital.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1709569380
+    "timestamp": 1709569814
   }
 }
