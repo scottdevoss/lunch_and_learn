@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 03 Mar 2024 22:19:37 GMT
+      - Tue, 05 Mar 2024 16:06:08 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -45,11 +45,11 @@ http_interactions:
       string: |
         {
           "kind": "youtube#searchListResponse",
-          "etag": "Bv_LKepRICL5gFj6cNH0FV7B67A",
+          "etag": "5x6T9rN4N7TTAKY0SZ6k_lWoBR8",
           "nextPageToken": "CAUQAA",
           "regionCode": "US",
           "pageInfo": {
-            "totalResults": 24,
+            "totalResults": 25,
             "resultsPerPage": 5
           },
           "items": [
@@ -225,5 +225,5 @@ http_interactions:
             }
           ]
         }
-  recorded_at: Sun, 03 Mar 2024 22:19:37 GMT
+  recorded_at: Tue, 05 Mar 2024 16:06:08 GMT
 recorded_with: VCR 6.2.0
