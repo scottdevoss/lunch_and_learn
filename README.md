@@ -1,5 +1,5 @@
 # Lunch and Learn
-This app will allow users to search for recipes by country, mark recipes as “favorite”, and learn more about a particular country.
+This app will allow users to search for learning resources and recipes by country, mark recipes as “favorite”, and learn more about a particular country.
 
 ## Learning Goals
 
